@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="cero">0</string>
+    <string name="uno">1</string>
+    <string name="dos">2</string>
+    <string name="tres">3</string>
+    <string name="cuatro">4</string>
+    <string name="cinco">5</string>
+    <string name="seis">6</string>
+    <string name="siete">7</string>
+    <string name="ocho">8</string>
+    <string name="nueve">9</string>
+    <string name="division">/</string>
+    <string name="suma">+</string>
+    <string name="resta">-</string>
+    <string name="multiplicacion">X</string>
+    <string name="igual">=</string>
+    <string name="borrar">BORRAR</string>
+    <string name="invertir">INV</string>
+    <string name="resukltado">Resultado</string>
+    <string name="coma">.</string>
+    <string name="contacto">Contacto</string>
+    <string name="datos">Yoel Fernández Suárez</string>
+    <string name="correo">Correo</string>
+    <string name="asunto">Asunto</string>
+    <string name="contenido">Contenido</string>
+    <string name="enviar">Enviar</string>
+    <string name="foto">Foto</string>
+    <string name="titulo">Calculadora</string>
+    <string name="todo">TODO</string>
+    <string name="imagen">Img</string>
+
+
+</resources>
