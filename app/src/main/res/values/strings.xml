@@ -29,6 +29,6 @@
     <string name="titulo">Calculadora</string>
     <string name="todo">TODO</string>
     <string name="imagen">Img</string>
-
+    <string name="cuadrado">x2</string>
 
 </resources>

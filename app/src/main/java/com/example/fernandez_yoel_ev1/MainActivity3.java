@@ -2,6 +2,7 @@ package com.example.fernandez_yoel_ev1;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -107,16 +108,44 @@ public class MainActivity3 extends AppCompatActivity {
 
                 return true;
 
-            case R.id.calcuadora:
+            case R.id.conta:
 
-                Intent intent2 = new Intent(MainActivity3.this, Calculadora.class);
+                Intent intent2 = new Intent(MainActivity3.this, MainActivity3.class);
 
                 startActivity(intent2);
                 return true;
 
-            default: return super.onOptionsItemSelected(item);
 
+            case R.id.email:
+
+                String url = "https://www.gmail.com";
+                Intent intent3 = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
+
+
+                startActivity(intent3);
+                return true;
+
+            case R.id.cal_2:
+                String url2 = "https://web2.0calc.es/";
+                Intent intent4 = new Intent(Intent.ACTION_VIEW, Uri.parse(url2));
+
+
+
+
+                startActivity(intent4);
+                return true;
+
+            case R.id.calculator:
+                Intent intent5 = new Intent(MainActivity3.this,Calculadora.class);
+
+
+
+                startActivity(intent5);
+                return true;
+            default: return super.onOptionsItemSelected(item);
         }
 
+
     }
-}
+
+    }

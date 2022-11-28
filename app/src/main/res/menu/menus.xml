@@ -4,9 +4,19 @@
         android:id="@+id/inicio"
         android:title="Inicio" />
     <item
-        android:id="@+id/calcuadora"
-        android:title="Calculadora" />
+        android:id="@+id/calc"
+        android:title="Calculadora" >
+        <menu>
+            <item android:id="@+id/calculator" android:title="local"/>
+            <item android:id="@+id/cal_2" android:title="online"/>
+        </menu>
+    </item>
     <item
-        android:id="@+id/contacto"
-        android:title="Contacto"  />
+        android:id="@+id/contact"
+        android:title="Contacto"  >
+    <menu>
+        <item android:id="@+id/email" android:title="Gmail"/>
+        <item android:id="@+id/conta" android:title="contactar"/>
+    </menu>
+    </item>
 </menu>
