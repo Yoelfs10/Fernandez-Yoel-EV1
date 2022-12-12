@@ -15,7 +15,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class Calculadora extends AppCompatActivity {
     Button btnCero, btnUno, btnDos, btnTres, btnCuatro, btnCinco, btnSeis, btnSiete, btnOcho,
-            btnNueve, btnPunto, btnIgual, btnSuma, btnResta, btnMulti, btnDiv, btnLimpiar, btnCuadrado;
+            btnNueve, btnPunto, btnIgual, btnSuma, btnResta, btnMulti, btnDiv, btnLimpiar, btnCuadrado,btnInvertir;
     TextView etProceso, etconcatenar;
     double numero1, numero2, resultado;
     String operador;
@@ -44,6 +44,7 @@ public class Calculadora extends AppCompatActivity {
         btnDiv = (Button)findViewById(R.id.division);
         etProceso = (TextView)findViewById(R.id.resultado);
         btnCuadrado=(Button)findViewById(R.id.cuadrado);
+        btnInvertir=(Button)findViewById(R.id.invertir);
         btnCero.setOnClickListener(new View.OnClickListener() {
             @SuppressLint("SetTextI18n")
             @Override
@@ -227,6 +228,21 @@ public class Calculadora extends AppCompatActivity {
                 numero1 = 0;
                 numero2 = 0;
                 etProceso.setText("");
+            }
+        });
+        btnInvertir.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                etconcatenar = (TextView) findViewById(R.id.resultado);
+                // Esta será la cadena invertida, primero está vacía
+                String invertida = "";
+                // Recorremos la original del final al inicio
+                for (int indice = etconcatenar.length() - 1; indice >= 0; indice--) {
+                    // Y vamos concatenando cada carácter a la nueva cadena
+                    invertida += etconcatenar.getText().toString().charAt(indice);
+                }
+                etProceso.setText(invertida);
+
             }
         });
     }

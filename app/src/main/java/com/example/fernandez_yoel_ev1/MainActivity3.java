@@ -102,7 +102,7 @@ public class MainActivity3 extends AppCompatActivity {
         switch (item.getItemId()){
 
             case R.id.inicio:
-                Intent intent = new Intent(MainActivity3.this, MainActivity.class);
+                Intent intent = new Intent(MainActivity3        1º  11.this, MainActivity.class);
 
                 startActivity(intent);
 
